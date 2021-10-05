@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+        </style>
+    <title>API Docs</title>
+</head>
+<body>
+        <h2>API Docs Example</h2>
+        <ul>
+            <li>Supported methods: GET, POST, DELETE</li>
+            <li>Request base URL: http://localhost</li>
+            <li>Request bodies should be encoded using JSON format.</li>
+            <li>Responses use standard HTTP response codes to indicate errors</li>
+        </ul>
+
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-1wig">Desciption</th>
+                    <th class="tg-1wig">Path</th>
+                    <th class="tg-1wig">Method</th>
+                    <th class="tg-1wig">Request</th>
+                    <th class="tg-1wig"><span style="font-weight:bold">Response</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-0lax">Get All Users</td>
+                    <td class="tg-0lax">/users</td>
+                    <td class="tg-0lax">GET</td>
+                    <td class="tg-0lax">x</td>
+                    <td class="tg-0lax">Array of User Objects</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Get 1 User</td>
+                    <td class="tg-0lax">/users/:id</td>
+                    <td class="tg-0lax">GET</td>
+                    <td class="tg-0lax">x</td>
+                    <td class="tg-0lax">User Object</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Add a New User</td>
+                    <td class="tg-0lax">/users</td>
+                    <td class="tg-0lax">POST</td>
+                    <td class="tg-0lax">User Object</td>
+                    <td class="tg-0lax">x</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">Delete a User</td>
+                    <td class="tg-0lax">/users/:id</td>
+                    <td class="tg-0lax">DELETE</td>
+                    <td class="tg-0lax">x</td>
+                    <td class="tg-0lax">x</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>User Object Parameters:</h3>
+
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-1wig">Name</th>
+                    <th class="tg-1wig">Type</th>
+                    <th class="tg-1wig">Required/Optional</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-0lax">id</td>
+                    <td class="tg-0lax">number</td>
+                    <td class="tg-0lax">auto-generated</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">name</td>
+                    <td class="tg-0lax">string</td>
+                    <td class="tg-0lax">required</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">age</td>
+                    <td class="tg-0lax">number</td>
+                    <td class="tg-0lax">required</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">isAdmin</td>
+                    <td class="tg-0lax">boolean</td>
+                    <td class="tg-0lax">required</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">skills</td>
+                    <td class="tg-0lax">array</td>
+                    <td class="tg-0lax">required</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">languages</td>
+                    <td class="tg-0lax">object</td>
+                    <td class="tg-0lax">required</td>
+                </tr>
+                <tr>
+                    <td class="tg-0lax">hobbies</td>
+                    <td class="tg-0lax">array</td>
+                    <td class="tg-0lax">optional</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
